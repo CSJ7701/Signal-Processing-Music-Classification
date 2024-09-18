@@ -1,0 +1,58 @@
+NAME
+
+main.py - Compare the similarity of two songs
+
+SYNOPSIS
+
+python main.py [-h] [-f filename] [-S directory] [-p] [-c variable=value [variable=value ...]]
+
+DESCRIPTION
+
+main.py is a command-line tool for comparing the similarity of two songs based on their frequency compositions. It processes audio files to extract frequency characteristics and compares them using mathematical algorithms. The comparison results are stored for later analysis and can be used to generate playlists.
+
+OPTIONS
+
+- -h, --help: Show the help message and exit.
+
+- -f filename, --file filename: Specify the file to compare.
+
+- -S directory, --Scan directory: Directory to scan for songs. The tool will process all .mp3 files found in the specified directory.
+
+- -p, --play: Play a playlist generated based on the comparison results.
+
+- -c variable=value [variable=value ...], --config variable=value [variable=value ...]: Change variable values. Available variables are 'S' for SongData path, 'C' for CompData path, and 'D' for SongFile directory.
+
+EXAMPLES
+
+1. Show song comparison:
+
+python main.py -f song1.mp3
+
+2. Scan a directory for songs:
+
+python main.py -S /path/to/directory
+
+3. Compare songs and play a playlist:
+
+python main.py -f song2.mp3 -p
+
+4. Change variable values:
+
+python main.py -f song3.mp3 -c S=new_song_data.csv C=new_comp_data.csv D=/path/to/songs
+
+
+
+EXPECTED USE PROGRESSION
+
+1. Prepare a directory with .MP3 files
+
+2. Scan the directory
+python main.py -S /path/to/directory
+
+3. Compare a song
+python main.py -f /path/to/file.mp3
+ - This will compare the song to all songs that have been scanned in to the system so far. If a song with the filename file.mp3 has already been scanned, the system will use that information. Otherwise, the system will scan that file and save its data.
+
+4. Compare a song and play the generated playlist
+python main.py -f /path/to/file.mp3 -p
+ - This functionality has only been tested on Linux. Mileage on Windows systems may vary. Depends on the python 'vlc' library, which should also depend on the vlc media player application.

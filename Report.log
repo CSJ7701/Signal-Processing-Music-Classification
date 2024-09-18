@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.25)  27 APR 2024 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.3.25)  1 MAY 2024 22:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,10 +739,13 @@ Underfull \hbox (badness 8038) in paragraph at lines 132--133
 | []$\OML/cmm/m/it/10 .$ \OT1/ptm/m/it/10 Di-rec-tory should
  []
 
-[3] (./Report.bbl
-Underfull \vbox (badness 2368) has occurred while \output is active []
 
- [4])
+LaTeX Warning: Reference `eq:Euclidean' on page 3 undefined on input line 159.
+
+
+LaTeX Warning: Reference `eq:Euclidean' on page 3 undefined on input line 159.
+
+[3] [4] (./Report.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -761,15 +764,19 @@ Before submitting the final camera ready copy, remember to:
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 15977 strings out of 476076
- 318675 string characters out of 5793775
- 1962187 words of memory out of 5000000
- 37767 multiletter control sequences out of 15000+600000
+ 15979 strings out of 476076
+ 318716 string characters out of 5793775
+ 1963187 words of memory out of 5000000
+ 37769 multiletter control sequences out of 15000+600000
  597309 words of font info for 109 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 117i,16n,121p,2460b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,2467b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -782,7 +789,7 @@ mbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on Report.pdf (5 pages, 235578 bytes).
+Output written on Report.pdf (5 pages, 237505 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
